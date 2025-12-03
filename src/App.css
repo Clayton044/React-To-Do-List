@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Main container */
+.container {
+  background-color: #ffffffcc;
+  width: 400px;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header */
+.container h1 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #333;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #fda085;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #fda085;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-section input:focus {
+  border-color: #f6d365;
+  box-shadow: 0 0 10px rgba(246, 211, 101, 0.5);
+}
+
+.input-section button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #fda085;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input-section button:hover {
+  background: #f6d365;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Todo List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff8f0;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons inside Todo Item */
+li button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+li button:nth-child(2) { /* Edit button */
+  background: #6c63ff;
+  color: white;
+}
+
+li button:nth-child(2):hover {
+  background: #5548c8;
+}
+
+li button:nth-child(3) { /* Delete button */
+  background: #ff6b6b;
+  color: white;
+}
+
+li button:nth-child(3):hover {
+  background: #e63946;
+}
+
+/* Input when editing */
+li input {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 2px solid #6c63ff;
+  outline: none;
+  font-size: 0.9rem;
+  margin-right: 6px;
+}
+
+/* Save & Cancel buttons during editing */
+li button:nth-child(2),
+li button:nth-child(3) {
+  font-size: 0.85rem;
+  padding: 6px 10px;
+}
+
